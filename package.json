@@ -1,0 +1,24 @@
+{
+    "name": "surf-api",
+    "version": "1.0.0",
+    "description": "Typescript Node.js API",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "nodejs",
+        "typescript",
+        "api"
+    ],
+    "author": "Victor Nathanael",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/module-alias": "^2.0.1",
+        "@types/node": "^18.15.10",
+        "typescript": "^5.0.2"
+    },
+    "dependencies": {
+        "module-alias": "^2.2.2"
+    }
+}
