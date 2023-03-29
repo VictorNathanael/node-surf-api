@@ -1,13 +1,12 @@
-const { resolve } = require('path');
-const root = resolve(__dirname, '..');
-const rootConfig = require(`${root}/jest.config.js`);
-
-module.exports = {
-    ...rootConfig,
-    ...{
-        rootDir: root,
-        displayName: 'end2end-tests',
-        setupFilesAfterEnv: ['<rootDir>/test/jest-setup.ts'],
-        testMatch: ['<rootDir>/test/**/*.test.ts'],
-    },
+import { resolve } from 'path';
+const root = resolve(__dirname);
+export const rootDir = root;
+export const displayName = 'root-tests';
+export const testMatch = ['<rootDir>/src/**/*.test.ts'];
+export const testEnvironment = 'node';
+export const clearMocks = true;
+export const preset = 'ts-jest';
+export const moduleNameMapper = {
+  '@src/(.*)': '<rootDir>/src/$1',
+  '@test/(.*)': '<rootDir>/test/$1',
 };
