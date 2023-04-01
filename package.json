@@ -23,6 +23,7 @@
   "author": "Victor Nathanael",
   "license": "ISC",
   "devDependencies": {
+    "@types/config": "^3.3.0",
     "@types/jest": "^27.0.3",
     "@types/module-alias": "^2.0.1",
     "@types/node": "16",
@@ -42,6 +43,7 @@
     "@types/express": "^4.17.13",
     "axios": "^0.24.0",
     "body-parser": "^1.19.1",
+    "config": "^3.3.9",
     "express": "^4.17.2",
     "module-alias": "^2.2.2"
   }
