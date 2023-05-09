@@ -4,7 +4,6 @@ import { User } from '@src/models/user';
 import AuthService from '@src/services/auth';
 import { BaseController } from './index';
 import { authMiddleware } from '@src/middlewares/auth';
-import { userInfo } from 'os';
 
 @Controller('users')
 export class UsersController extends BaseController {
