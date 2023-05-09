@@ -1,9 +1,7 @@
 import { Controller, Post, ClassMiddleware } from '@overnightjs/core';
 import { Request, Response } from 'express';
 import { Beach } from '@src/models/beach';
-import mongoose from 'mongoose';
 import { authMiddleware } from '@src/middlewares/auth';
-import logger from '@src/logger';
 import { BaseController } from '.';
 
 @Controller('beaches')
