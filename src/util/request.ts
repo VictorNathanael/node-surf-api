@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
 
-export interface RequestConfig extends AxiosRequestConfig {}
-export interface Response<T = any> extends AxiosResponse<T> {}
+export type RequestConfig = AxiosRequestConfig
+export type Response<T = any> = AxiosResponse<T>
 
 export class Request {
   constructor(private request = axios) {}
